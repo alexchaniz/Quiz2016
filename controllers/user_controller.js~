@@ -171,6 +171,6 @@ exports.indexReturn = function(req, res, next) {
             next();
         })
         .catch(function(error) { next(error); });
-};
+}
 };
 
