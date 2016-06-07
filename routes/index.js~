@@ -89,10 +89,5 @@ router.delete('/users/:userId([0-9]+)/favourites/:quizId(\\d+)', sessionControll
                                                                  sessionController.adminOrMyselfRequired,
                                                                  favouriteController.del);
 
-/* GET author page. */
-router.get('/author', function(req, res, next) {
-  res.render('author');
-});
-
 
 module.exports = router;
